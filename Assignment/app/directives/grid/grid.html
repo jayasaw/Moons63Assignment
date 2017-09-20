@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <tr>
+        <th ng-repeat='table in myGrid.gridSetting track by $index'>{{table.displayName}}</th>
+    </tr>
+
+    <tr ng-repeat='x in myGrid.rowData track by $index'>
+        <td ng-repeat='column in myGrid.gridSetting track by $index'>
+            <div ng-if="column.columnName =='checkbox'">
+                <input type="checkbox">
+            </div>
+            <span ng-if="column.columnName !=='checkbox'">
+            {{x[column.columnName]}}
+        </span>
+        </td>
+    </tr>
+</table>

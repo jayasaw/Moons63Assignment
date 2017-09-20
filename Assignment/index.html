@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='./bower_components/bootstrap/dist/css/bootstrap.css' rel="stylesheet"></link>
+    <link href="style.css" rel="stylesheet"></link>
+</head>
+
+<body ng-app='app' ng-controller="mainCtrl as ctrl">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class=" containe-fluid ">
+                <div class='navbar-header'>
+                    <a href="# " class="navbar-brand ">Customer Details</a>
+                </div>
+                <div class="navbar-form navbar-left ">
+                    <div class='form-group'>
+                        <!-- <input type='text' ng-model="ctrl.search" class='form-control' placeholder="search" <span class="glyphicon glyphicon-search pull- right"
+                                        aria-hidden="true"></span> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+
+        <ui-view></ui-view>
+
+    </div>
+
+
+    <script src='./bower_components/angular/angular.js'></script>
+    <script src='./bower_components/jquery/dist/jquery.js'></script>
+    <script src='./bower_components/bootstrap/dist/js/bootstrap.js'></script>
+    <script src='./bower_components/angular-ui-router/release/angular-ui-router.js'></script>
+    <script src='index.js'></script>
+    <script src='./app/controllers/customer/customerCtrl.js'></script>
+    <script src='./app/controllers/home/homeCtrl.js'></script>
+
+    <script src='./app/directives/form/formCtrl.js'></script>
+    <script src='./app/directives/grid/gridCtrl.js'></script>
+    <script src='./app/service/configService.js'></script>
+    <script src='./app/service/dataService.js'></script>
+    <script src='./app/controllers/search/searchCtrl.js'></script>
+</body>
+
+</html>

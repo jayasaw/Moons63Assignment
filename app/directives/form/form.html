@@ -1,0 +1,10 @@
+<div class = 'form-group' ng-repeat = 'form in formCtrl.configForm track by $index'>
+    <label class = 'control-label'>{{form.labelName}}</label>
+    <div>
+        <input type = '{{form.type}}' name = '{{form.fieldName}}' class = 'form-control'
+            ng-model = 'formCtrl.model[form.fieldName]'/>
+    </div>
+</div>
+
+
+

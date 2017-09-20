@@ -1,0 +1,30 @@
+<div class='container-fluid'>
+
+    <div class='row'>
+        <div class='col-md-8 col-md-offset-2'>
+            <div class='horizontal'>
+                <!-- <div class='panel panel-default'>
+                        <div class='panel-heading'>Form</div> -->
+                <div class='panel-body'>
+                    <my-form config-form='form.formData' model='form.modelObj' ng-if = 'form.config' > </my-form>
+                    <div class='col-md-offset-8' ng-if = 'form.config'>
+                        <button type='submit' class='btn btn-primary' ng-click="form.save()">save</button>
+                        <button type='submit' class='btn btn-primary' ng-click="form.cancel()">cancel</button>
+
+                
+                    </div class = 'form-group'>
+                <!-- </div class = 'col-md-offset-4 form-group'> -->
+                <button type='submit' class='btn btn-primary' ng-click = 'form.homePage()' ng-if = '!form.config'>Home Page</button>
+             </div> 
+                    <div class = 'form-group'>
+                        <button type='submit' class='btn btn-primary' ng-click = 'form.addCustomer()' ng-if = '!form.config'>Add Customer</button>
+                        <button type='submit' class='btn btn-primary' ng-click = 'form.upDate()'>Update Customer</button>
+                        <button type='submit' class='btn btn-primary' ng-click = 'form.delete(data)'>Delete Customer</button>
+                    </div>
+                </div>
+                <my-grid grid-setting='form.addColumn' row-data='form.addGridData'></my-grid>
+            </div>
+        </div>
+    </div>
+
+
